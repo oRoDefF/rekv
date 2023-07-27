@@ -15,6 +15,7 @@ urls = [
 ]  # список адресов
 
 
+```
 def requests_get(url_all):
     # принимает список адресов
     r = (requests.get(url) for url in url_all)
@@ -46,6 +47,7 @@ def parser():
 
 
 parser()
+```
 
 
 # Задача №2
@@ -58,6 +60,7 @@ parser()
 
 HOST: https://cloud-api.yandex.net:443
 
+```
 import requests
 
 
@@ -100,3 +103,4 @@ if __name__ == '__main__':
     print(f"Загружаем файл {path_to_file.split('/', )[-1]} на Яндекс.Диск")
     result = uploader.upload(path_to_file)
     print(result)
+```
