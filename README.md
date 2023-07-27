@@ -5,6 +5,8 @@
 Кто самый умный супергерой?
 Есть API по информации о супергероях с информацией по всем супергероям. Нужно определить кто самый умный(intelligence) из трех супергероев- Hulk, Captain America, Thanos.
 
+
+```
 import requests
 
 TOKEN = '2619421814940190'  # константа токена
@@ -14,8 +16,6 @@ urls = [
     f'https://www.superheroapi.com/api.php/{TOKEN}/search/Captain%America',
 ]  # список адресов
 
-
-```
 def requests_get(url_all):
     # принимает список адресов
     r = (requests.get(url) for url in url_all)
